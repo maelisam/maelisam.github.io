@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('fonts/BrittanySignatureRegular.woff2') format('woff2'),
+    url('fonts/BrittanySignatureRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: rgb(236, 234, 230);
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+  }
+
+.navbar-nav {
+height: 100vh;
+display: flex !important;
+justify-content: center !important;
+align-items: center !important;
+}
+
+.nav-link {
+color: rgb(95, 95, 95) !important;
+font-size: large !important;
+font-family: 'Roboto Mono', monospace !important;
+}
+
+.nav-link:hover {
+color: rgb(150, 148, 148) !important;
+}
+
+.nav-link:active {
+color: rgb(150, 148, 148) !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.icon {
+  color: rgb(155, 153, 153);
+  font-size: larger;
+}
+
+.xmark {
+display: none;
+}
+
+.logo {
+font-family: 'Brittany Signature';
+color: rgb(107, 106, 106);
+font-size: 3em;
+}
+
+.luokka {
+background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* GALLERY */
+
+.tz-gallery {
+  padding: 40px;
+}
+
+.tz-gallery .row > div {
+  padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+}
+
+.tz-gallery .lightbox:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  opacity: 0;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Glyphicons Halflings';
+  content: '\e003';
+  pointer-events: none;
+  z-index: 9000;
+  transition: 0.4s;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+/* CONTENT */
+
+.logo-in-text {
+  font-family: 'Brittany Signature';
+  color: rgb(70, 67, 67);
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.text {
+  color: rgb(95, 95, 95) !important;
+  font-size: large !important;
+  font-family: 'Roboto Mono', monospace !important;
+  text-align: center !important;
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(95, 95, 95);   
+}
+
+.footer-container {
+display: flex;
+justify-content:space-evenly;
+}
+
+.ek {
+  display: flex;
+  flex-direction: column;
+  color: blanchedalmond !important;
+  align-items: flex-start;
+}
+
+.socialMedia {
+font-size: 5em;
+color: blanchedalmond !important;
+justify-content: flex-start !important;
+align-items: flex-start !important;
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .vaaka {
+      display: none !important;
+    }
+    .phone {
+        display: block !important;
+      }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .phone {
+      display: none !important;
+    }
+    .vaaka {
+        display: block !important;
+      }
+  }
