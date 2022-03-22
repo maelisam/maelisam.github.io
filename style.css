@@ -17,27 +17,27 @@ body {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0);
-  }
+}
 
 .navbar-nav {
-height: 100vh;
-display: flex !important;
-justify-content: center !important;
-align-items: center !important;
+  height: 100vh;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .nav-link {
-color: rgb(95, 95, 95) !important;
-font-size: large !important;
-font-family: 'Roboto Mono', monospace !important;
+  color: rgb(95, 95, 95) !important;
+  font-size: large !important;
+  font-family: 'Roboto Mono', monospace !important;
 }
 
 .nav-link:hover {
-color: rgb(150, 148, 148) !important;
+  color: rgb(150, 148, 148) !important;
 }
 
 .nav-link:active {
-color: rgb(150, 148, 148) !important;
+  color: rgb(150, 148, 148) !important;
 }
 
 .navbar-toggler:focus,
@@ -50,7 +50,9 @@ color: rgb(150, 148, 148) !important;
 
 .icon {
   color: rgb(155, 153, 153);
-  font-size: larger;
+  font-size: xx-large !important;
+  position: absolute !important;
+  right: 5% !important;
 }
 
 .xmark {
@@ -131,8 +133,8 @@ background-color: rgba(0, 0, 0, 0);
 }
 
 .footer-container {
-display: flex;
-justify-content:space-evenly;
+  display: flex;
+  justify-content:space-evenly;
 }
 
 .ek {
@@ -143,14 +145,19 @@ justify-content:space-evenly;
 }
 
 .socialMedia {
-font-size: 5em;
-color: blanchedalmond !important;
-justify-content: flex-start !important;
-align-items: flex-start !important;
-
+  font-size: 5em;
+  color: blanchedalmond !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
 }
 
-
+.footer-text {
+  color: blanchedalmond !important;
+  font-size: 0.9em !important;
+  font-family: 'Roboto Mono', monospace !important;
+  text-align: center !important;
+  line-height: 80%;
+}
 
 @media only screen and (max-width: 767px) {
     .vaaka {
