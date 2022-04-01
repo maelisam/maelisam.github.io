@@ -1,8 +1,12 @@
-var iconchange = document.getElementById('iconchange');
-var bars = document.querySelector('.bars');
-var xmark = document.querySelector('.xmark');
-var navbar = document.getElementById('navbar');
-var navlogo = document.querySelector('.navlogo');
+const iconchange = document.getElementById('iconchange');
+const bars = document.querySelector('.bars');
+const xmark = document.querySelector('.xmark');
+const navbar = document.getElementById('navbar');
+const navlogo = document.querySelector('.navlogo');
+const landingImage = document.querySelector('.landing-image');
+const link1 = document.querySelector('.link-image-1');
+const link2 = document.querySelector('.link-image-2');
+const link3 = document.querySelector('.link-image-3');
 
 // Navbar
 
@@ -24,8 +28,34 @@ function scrollFunction() {
   }
 }
 */
+link1.addEventListener('mouseover', showImage1);
+link1.addEventListener('mouseleave', showLandingImage);
+link2.addEventListener('mouseover', showImage2);
+link2.addEventListener('mouseleave', showLandingImage);
+link3.addEventListener('mouseover', showImage3);
+link3.addEventListener('mouseleave', showLandingImage);
 
 iconchange.addEventListener('click', hei);
+
+function showImage1() {
+  landingImage.style.backgroundImage = "url('IMG/perhe-kuvaus.jpg')";
+  landingImage.style.transition = 'all 300ms';
+}
+
+function showImage2() {
+  landingImage.style.backgroundImage = "url('IMG/muoto-kuvaus.jpg')";
+  landingImage.style.transition = 'all 300ms';
+}
+
+function showImage3() {
+  landingImage.style.backgroundImage = "url('IMG/perhe-kuvaus.jpg')";
+  landingImage.style.transition = 'all 300ms';
+}
+
+function showLandingImage() {
+  landingImage.style.backgroundImage = "url('IMG/odotus-kuvaus.jpg')";
+  landingImage.style.transition = 'all 1000ms';
+}
 
 function hei() {
   if (iconchange.classList.contains('collapsed')) {

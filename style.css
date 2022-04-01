@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap');
 
 @font-face {
   font-family: 'Brittany Signature';
@@ -10,22 +11,106 @@
 }
 
 body {
-  background-color: rgb(236, 234, 230);
+  background-color: rgb(214, 212, 207);
+}
+
+
+.index-page {
+  overflow-x: hidden;
 }
 
 .main-logo {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 0%;
+  left: 1%;
   z-index: 100;
+  width: 100px;
+}
+
+.carousel-caption {
+  top: 40vh;
+  bottom: auto;
+}
+
+/*
+.landing-page {
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  background-size: cover; 
+  height: 100vh;
+  animation: opacityOff 500ms 500ms 1 forwards step-end;
+  animation-delay: 1s;
+  z-index: 500;
+}
+
+.landing-page-links {
+  opacity: 0;
+  animation: opacityOn 1s 1s 1 forwards step-end;
+  animation-delay: 1s;
+}
+
+*/
+
+.image-item {
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  background-size: cover; 
+  height: 100vh;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+.page-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.caption-link-screen {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 20px !important;
+  font-weight: normal !important;
+  text-decoration: none;
+  color: rgb(175, 172, 172);
+  margin-right: 3em;  
+}
+
+.caption-link-screen:hover{
+  text-decoration: none;
+  color: rgb(175, 172, 172);
+  border-bottom: rgb(175, 172, 172) 1px solid;
+  display: inline-block;
+  height: 1.5em;
 }
 
 .carousel-item {
   background-repeat: no-repeat; 
   background-position: center center; 
   background-size: cover; 
-  height: 99vh;
+  height: 100vh;
   box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+.caption-item {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 16px !important;
+  font-weight: normal !important;
+}
+
+.caption-link {
+  text-decoration: none;
+  color: rgb(175, 172, 172);
+  padding-right: 15px;  
+}
+
+.caption-line {
+  border-bottom: rgb(175, 172, 172) 1px solid;
+  display: inline-block;
+  height: 1.5em;
 }
 
 /* NAVBAR */
@@ -64,7 +149,7 @@ body {
 }
 
 .icon {
-  color: rgb(155, 153, 153);
+  color: rgb(175, 172, 172);
   font-size: xx-large !important;
   position: absolute !important;
   right: 5% !important;
@@ -80,43 +165,6 @@ display: none;
 
 .luokka {
 background-color: rgba(0, 0, 0, 0);
-}
-
-
-/* GALLERY */
-
-.tz-gallery {
-  padding: 40px;
-}
-
-.tz-gallery .row > div {
-  padding: 2px;
-}
-
-.tz-gallery .lightbox img {
-  width: 100%;
-  border-radius: 0;
-  position: relative;
-}
-
-.tz-gallery .lightbox:before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -13px;
-  margin-left: -13px;
-  opacity: 0;
-  color: #fff;
-  font-size: 26px;
-  font-family: 'Glyphicons Halflings';
-  content: '\e003';
-  pointer-events: none;
-  z-index: 9000;
-  transition: 0.4s;
-}
-
-.baguetteBox-button {
-  background-color: transparent !important;
 }
 
 /* CONTENT */
@@ -179,10 +227,13 @@ background-color: rgba(0, 0, 0, 0);
     .phone {
         display: block !important;
       }
-
-    .main-logo {
-      top:40%;
-    }
+      .icon {
+        color: rgb(175, 172, 172);
+        font-size: large !important;
+        position: absolute !important;
+        right: 5% !important;
+      }
+      
     
 
   }
@@ -194,4 +245,22 @@ background-color: rgba(0, 0, 0, 0);
     .vaaka {
         display: block !important;
       }
+    .main-logo {
+        top:1%;
+        left: 2%;
+      }
   }
+
+
+  /*
+  @keyframes opacityOn {
+    87% {
+      opacity: 0.87;
+      z-index: 600;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+*/
