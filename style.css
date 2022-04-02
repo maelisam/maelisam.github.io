@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: rgb(214, 212, 207);
+  background-color: black;
 }
 
 
@@ -68,6 +68,14 @@ body {
   position: absolute;
   top: 0%;
   left: 0%;
+}
+
+.page-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 500px;
 }
 
 .caption-link-screen {
