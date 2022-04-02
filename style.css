@@ -14,10 +14,11 @@ body {
   background-color: black;
 }
 
+/*
 .index-page {
-  overflow-x: hidden;
+  overflow: hidden;
 }
-
+*/
 .main-logo {
   position: absolute;
   top: 0%;
@@ -154,6 +155,15 @@ display: none;
   margin-bottom: 1.5em;
 }
 
+.contact {
+  text-align: center !important;
+  font-family: 'Roboto Mono', monospace !important;
+  margin-top: 7em;
+  color: rgb(95, 95, 95) !important;
+  line-height: 60%;
+  font-size: 14px;
+}
+
 /* CONTENT */
 
 .logo-in-text {
@@ -173,39 +183,11 @@ display: none;
 /* FOOTER */
 
 .footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background-color: rgb(95, 95, 95);   
-}
-
-.footer-container {
-  display: flex;
-  justify-content:space-evenly;
-}
-
-.ek {
-  display: flex;
-  flex-direction: column;
-  color: blanchedalmond !important;
-  align-items: flex-start;
-}
-
-.socialMedia {
-  font-size: 5em;
-  color: blanchedalmond !important;
-  justify-content: flex-start !important;
-  align-items: flex-start !important;
-}
-
-.footer-text {
-  color: blanchedalmond !important;
-  font-size: 0.9em !important;
+  font-size: small !important;
   font-family: 'Roboto Mono', monospace !important;
-  text-align: center !important;
-  line-height: 80%;
+  width: 100%;
 }
+
 
 
 @media only screen and (max-width: 767px) {

@@ -8,6 +8,7 @@ const link1 = document.querySelector('.link-image-1');
 const link2 = document.querySelector('.link-image-2');
 const link3 = document.querySelector('.link-image-3');
 const pageLinks = document.querySelector('.page-links-container');
+const brand = document.querySelector('.brand');
 
 link1.addEventListener('mouseover', showImage1);
 link2.addEventListener('mouseover', showImage2);
@@ -61,12 +62,16 @@ function hei() {
     console.log('closed');
     xmark.style.display = 'none';
     bars.style.display = 'block';
+    pageLinks.style.display = 'block';
+    brand.style.display = 'block';
     removeBackground();
   } else {
     console.log('open');
     navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
     bars.style.display = 'none';
     xmark.style.display = 'block';
+    pageLinks.style.display = 'none';
+    brand.style.display = 'none';
   }
 }
 
