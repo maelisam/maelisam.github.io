@@ -13,6 +13,7 @@ link1.addEventListener('mouseover', showImage1);
 link2.addEventListener('mouseover', showImage2);
 link3.addEventListener('mouseover', showImage3);
 pageLinks.addEventListener('mouseleave', showLandingImage);
+iconchange.addEventListener('click', hei);
 
 // Navbar
 
@@ -34,8 +35,6 @@ function scrollFunction() {
   }
 }
 */
-
-iconchange.addEventListener('click', hei);
 
 function showImage1() {
   landingImage.style.backgroundImage = "url('IMG/perhe-kuvaus.jpg')";
